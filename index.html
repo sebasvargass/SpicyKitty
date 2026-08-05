@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Kitty</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   
+    <div class="floating hearts">💗</div>
+
+    <header class="header">
+        <img src="./imagenes/logo.jpg" class="logo" alt="Spicy Kitty Logo">
+        <h1>Spicy Kitty 🍬🐱</h1>
+        <p class="slogan">Gomitas y frutas enchiladas con estilo Hello Kitty</p>
+
+        <button class="cart-btn" onclick="toggleCart()">🛒</button>
+    </header>
+
+    <main class="container">
+
+        <h2 class="section-title">Menu Spicy Kitty</h2>
+
+        <div class="product-list">
+
+            <div class="product-card">
+                <img src="./imagenes/gomitas peque.jpg" class="product-img">
+                <h3>Gomitas enchiladas</h3>
+                <p class="desc">Paquete pequeño</p>
+                <p class="price">$2.000</p>
+
+                <button class="desc-btn"
+                    onclick="showDescription(
+                        'Gomitas enchiladas pequeñas',
+                        './imagenes/gomitas peque.jpg',
+                        'Porción pequeña de gomitas enchiladas con el toque especial Spicy Kitty 💗🐱'
+                    )">Descripción</button>
+
+                <button class="add-btn"
+                    onclick="addToCart('Gomitas enchiladas', 2000, './imagenes/gomitas peque.jpg')">
+                    Agregar 🛒
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="./imagenes/gomitas grandes.jpg" class="product-img">
+                <h3>Gomitas enchiladas</h3>
+                <p class="desc">Paquete grande</p>
+                <p class="price">$5.000</p>
+
+                <button class="desc-btn"
+                    onclick="showDescription(
+                        'Gomitas enchiladas grandes',
+                        './imagenes/gomitas grandes.jpg',
+                        'Porción grande de gomitas enchiladas con sabor mas intenso 💗✨'
+                    )">Descripción</button>
+
+                <button class="add-btn"
+                    onclick="addToCart('Gomitas enchiladas', 5000, './imagenes/gomitas grandes.jpg')">
+                    Agregar 🛒
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="./imagenes/bandeja.jpg" class="product-img">
+                <h3>Bandeja de fruta enchilada</h3>
+                <p class="desc">Fruta premium</p>
+                <p class="price">$30.000</p>
+
+                <button class="desc-btn"
+                    onclick="showDescription(
+                        'Bandeja de fruta enchilada',
+                        './imagenes/bandeja.jpg',
+                        'Fruta enchilada grande con el toque unico de Spicy Kitty 🍓💗🐱'
+                    )">Descripción</button>
+
+                <button class="add-btn"
+                    onclick="addToCart('Bandeja de fruta enchilada', 30000, './imagenes/bandeja.jpg')">
+                    Agregar 🛒
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <img src="./imagenes/hello kitty 1.png" class="kitty-img">
+
+            <div class="modal-info">
+                <img id="modal-product-img" class="product-preview">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+
+                <button class="close-modal" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <aside id="cart-panel" class="cart hidden">
+        <h2>Carrito 🛒</h2>
+        <div id="cart-items"></div>
+        <p id="total"></p>
+
+        <button class="order-btn" onclick="order()">Realizar pedido</button>
+        <button class="close-btn" onclick="toggleCart()">Cerrar</button>
+    </aside>
+
+    <footer>
+        <h3>Síguenos</h3>
+        <div class="social">
+            <a href="https://www.instagram.com/sspicy_kittyy?igsh=MXJhbmxnZXhvc2F6bw==" target="_blank">Instagram</a>
+            <a href="https://whatsapp.com/channel/0029VbC9pK5IXnltaEJO4I3i" target="_blank">WhatsApp</a>
+            <a href="https://www.tiktok.com/@spicy.kitty84?_r=1&_t=ZS-98cBacTXAsz" target="_blank">TikTok</a>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Kitty - Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <img src="./imagenes/logo.jpg" class="logo">
+        <h1>Spicy Kitty 💗🐱</h1>
+        <p class="subtitle">Panel de Administración</p>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="card">
+            <h2>Caja Diaria 💗</h2>
+
+            <div class="grid">
+                <div class="item"><span>Estado:</span> <strong id="estado">Caja Cerrada</strong></div>
+                <div class="item"><span>Monto Inicial:</span> <strong id="montoInicial">$0</strong></div>
+                <div class="item"><span>Ventas del Día:</span> <strong id="ventasDia">$0</strong></div>
+                <div class="item"><span>Total Pedidos:</span> <strong id="pedidosDia">$0</strong></div>
+                <div class="item"><span>Efectivo:</span> <strong id="efectivo">$0</strong></div>
+                <div class="item"><span>Nequi:</span> <strong id="nequi">$0</strong></div>
+                <div class="item"><span>Daviplata:</span> <strong id="daviplata">$0</strong></div>
+                <div class="item"><span>Transferencia:</span> <strong id="transferencia">$0</strong></div>
+                <div class="item"><span>Inversión Real:</span> <strong id="inversion">$220.700</strong></div>
+                <div class="item"><span>Ventas Totales:</span> <strong id="ventasTotales">$0</strong></div>
+                <div class="item"><span>Resultado Actual:</span> <strong id="resultado">$0</strong></div>
+            </div>
+
+            <button class="btn abrir" onclick="abrirCaja()">Abrir Caja</button>
+            <button class="btn cerrar" onclick="cerrarCaja()">Cerrar Caja</button>
+        </section>
+
+        <section class="card">
+            <h2>Historial</h2>
+            <ul id="historial"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Pedidos 🐱💗</h2>
+            <div id="listaPedidos"></div>
+        </section>
+
+    </main>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

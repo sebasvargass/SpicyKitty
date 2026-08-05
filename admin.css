@@ -1,0 +1,102 @@
+body {
+    background-color: #ffe6f7;
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    color: #d63384;
+}
+
+.admin-header {
+    background-color: #ffb3e6;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ff66cc;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 15px;
+}
+
+.subtitle {
+    margin-top: -10px;
+    font-size: 16px;
+    color: #b30059;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 330px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #ff66cc;
+    box-shadow: 0 4px 10px rgba(255, 102, 204, 0.3);
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.item {
+    background: #ffe6f7;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #ff66cc;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.abrir { background-color: #ff66cc; color: white; }
+.cerrar { background-color: #ff1493; color: white; }
+
+#historial {
+    list-style: none;
+    padding-left: 0;
+}
+
+#historial li {
+    background: #ffe6f7;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ff66cc;
+}
+
+.pedido-card {
+    background: #ffe6f7;
+    border: 3px solid #ff66cc;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(255, 102, 204, 0.3);
+}
+
+.pedido-card ul {
+    padding-left: 20px;
+}
+
+.btn.entregar {
+    background-color: #ff99cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
